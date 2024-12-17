@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 
+}
+/* ハンバーガーメニュー */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #ffffff; /* メニューリンクの文字色を白に変更 */
+    padding: 5px 10px;
+    border-radius: 5px; /* リンクの角を丸くする（必要に応じて） */
+    transition: background-color 0.3s ease; /* ホバー時の色変更をスムーズに */
+}
+
+#menu li a:hover {
+    background-color: #555; /* リンクの背景色を変更（ホバー時） */
+    color: #fff; /* ホバー時の文字色 */
+}
+#menu.hidden {
+    display: none;
+    background-color: #222; 
+}
+
+
+#menu li {
+    display: inline;
+}
+
+#menu  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    background-color: #444; /* メニュー全体の背景色を変更 */
+    border-radius: 5px; /* メニューリストの角を丸くする */
+}
+
+/* スライドショー */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: none;
+}
+
+.slideshow.active {
+    display: block; /* アクティブなスライドショーを表示 */
+}
+.slides img {
+    display: none;
+    width: 100%;
+}
+
+.slides img.active {
+    display: block;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* 背景画像の設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.background {
+    background-image: url('食堂.png'); /* 画像のパスを指定 */
+    background-size: cover; /* 画像を画面全体に拡大 */
+    background-position: center; /* 中央に配置 */
+    background-repeat: no-repeat; /* 繰り返しなし */
+    height: 100vh; /* ビューポートの高さに合わせる */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+main p {
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+}
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  .dot:hover {
+    background-color: #666;
+  }
